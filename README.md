@@ -62,8 +62,8 @@ playwright-imoveis-qa/
 ## 🔑 Variáveis de Ambiente (.env)
 
 ```
-TEST_EMAIL=usuario-teste-qa2@gmail.com
-TEST_PASSWORD=desafiotecnico
+TEST_EMAIL=XXXXXXXX
+TEST_PASSWORD=XXXXXXXX
 ENVIRONMENT=prod
 BASE_URL=https://app.jetimob.com
 ```
