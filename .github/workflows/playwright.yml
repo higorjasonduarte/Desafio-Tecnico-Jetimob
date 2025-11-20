@@ -10,20 +10,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      # Passo 1: Fazer checkout do código
+      - uses: actions/checkout@v4
 
-    - uses: actions/setup-node@v4
-      with:
-        node-version: 18
+      # Passo 2: Configurar Node.js
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-    - name: Install dependencies
-      run: npm install
+      # Passo 3: Instalar dependências do projeto
+      - name: Install dependencies
+        run: npm install
 
-    - name: Install Browsers
-      run: npx playwright install --with-deps
+      # Passo 4: Instalar Playwright e navegadores
+      - name: Install Browsers
+        run: npx --yes playwright install --with-deps
 
-    - name: Run tests
-      env:
-        TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
-        TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
-      run: npm run test:headless
+      # Passo 5: Rodar os testes
+      - name: Run tests
+        env:
+          TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+          TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
+        run: npm run test:headless
+
+      # Passo 6: Fazer upload de artefatos (screenshots, vídeos e traces) caso algum teste falhe
+      - name: Upload Playwright artifacts
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: playwright-artifacts
+          path: test-results/
