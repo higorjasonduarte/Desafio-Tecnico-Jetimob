@@ -1,24 +1,4 @@
-Perfeito! Vou gerar um **README profissional e atualizado**, refletindo o **novo projeto profissional** que fizemos com:
-
-* Variáveis de ambiente (.env)
-* Multi-browser (Chromium, Firefox, Webkit)
-* Page Object Model (POM)
-* Fixtures customizadas
-* CI/CD (GitHub Actions)
-* Allure Report
-* Estrutura modular de testes
-
-Você pode colar direto no GitHub.
-
----
-
 # 📘 **Automação QA – Módulo Imóveis | Jetimob**
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Playwright-Automation-2ea44f?style=for-the-badge&logo=playwright" />
-  <img src="https://img.shields.io/badge/TypeScript-StronglyTyped-blue?style=for-the-badge&logo=typescript" />
-  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" />
-</p>
 
 Automação desenvolvida como parte do **Desafio Técnico de QA da Jetimob**, para validar **persistência e comportamento de filtros** no módulo **/imoveis**.
 
