@@ -1,0 +1,12 @@
+{
+  "name": "playwright-imoveis",
+  "version": "1.0.0",
+  "description": "Automação QA - Desafio Técnico Jetimob",
+  "scripts": {
+    "test": "playwright test",
+    "codegen": "playwright codegen"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0"
+  }
+}
