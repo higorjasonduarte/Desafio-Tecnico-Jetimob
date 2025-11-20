@@ -1,167 +1,184 @@
-# 📘 **Desafio Técnico – Automação de Testes | Jetimob – Módulo Imóveis**
+Perfeito! Vou gerar um **README profissional e atualizado**, refletindo o **novo projeto profissional** que fizemos com:
 
-Automação desenvolvida como parte do **Desafio Técnico de QA** da Jetimob.
-O objetivo é validar o comportamento de **persistência de filtros** no módulo **/imoveis**, garantindo previsibilidade e consistência na experiência do usuário.
+* Variáveis de ambiente (.env)
+* Multi-browser (Chromium, Firefox, Webkit)
+* Page Object Model (POM)
+* Fixtures customizadas
+* CI/CD (GitHub Actions)
+* Allure Report
+* Estrutura modular de testes
 
----
-
-# 🧭 **Objetivo do Projeto**
-
-Validar, por meio de testes automatizados em **Playwright**, as regras de:
-
-* Carregamento inicial de filtros
-* Persistência de filtros aplicados
-* Persistência após recarregar a página
-* Persistência ao navegar internamente
-* Persistência ao sair e retornar ao módulo
-* Comportamento com e sem filtros favoritados
+Você pode colar direto no GitHub.
 
 ---
 
-# 🚀 **Tecnologias Utilizadas**
+# 📘 **Automação QA – Módulo Imóveis | Jetimob**
 
-| Tecnologia     | Descrição                                       |
-| -------------- | ----------------------------------------------- |
-| **Playwright** | Framework de testes end-to-end rápido e moderno |
-| **TypeScript** | Linguagem principal dos testes                  |
-| **Node.js**    | Ambiente de execução                            |
-| **GitHub**     | Versionamento e documentação                    |
+<p align="center">
+  <img src="https://img.shields.io/badge/Playwright-Automation-2ea44f?style=for-the-badge&logo=playwright" />
+  <img src="https://img.shields.io/badge/TypeScript-StronglyTyped-blue?style=for-the-badge&logo=typescript" />
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" />
+</p>
+
+Automação desenvolvida como parte do **Desafio Técnico de QA da Jetimob**, para validar **persistência e comportamento de filtros** no módulo **/imoveis**.
 
 ---
 
-# 📁 **Estrutura do Projeto**
+## 🧭 Objetivo
+
+Garantir que o módulo **/imoveis**:
+
+* Carrega corretamente filtros favoritados
+* Mantém persistência de filtros aplicados em navegação interna
+* Mantém filtros após recarregar a página (F5)
+* Mantém filtros após sair e voltar ao módulo
+* Funciona corretamente para usuários com e sem filtros favoritados
+
+---
+
+## 🛠️ Tecnologias
+
+| Tecnologia         | Descrição                      |
+| ------------------ | ------------------------------ |
+| **Playwright**     | Framework de testes end-to-end |
+| **TypeScript**     | Linguagem principal            |
+| **Node.js**        | Ambiente de execução           |
+| **Allure**         | Relatórios de testes           |
+| **GitHub Actions** | CI/CD pipeline                 |
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```
 playwright-imoveis-qa/
 │
 ├── package.json
 ├── playwright.config.ts
+├── .env
+├── .gitignore
 ├── README.md
 │
+├── configs/
+│   └── environment.ts
+│
+├── helpers/
+│   └── test-fixtures.ts
+│
+├── pages/
+│   ├── login.page.ts
+│   └── imoveis.page.ts
+│
 └── tests/
-    ├── login.helper.ts
-    ├── filtros-sem-favorito.spec.ts
-    └── filtros-com-favorito.spec.ts
+    ├── filtros/
+    │   ├── filtros-sem-favorito.spec.ts
+    │   └── filtros-com-favorito.spec.ts
+    └── smoke/
+        └── login-smoke.spec.ts
 ```
 
 ---
 
-# 🧪 **Escopo e Cobertura de Testes**
+## 🔑 Variáveis de Ambiente (.env)
 
-### 🔹 **Usuário sem filtro favoritado**
+```
+TEST_EMAIL=usuario-teste-qa2@gmail.com
+TEST_PASSWORD=desafiotecnico
+ENVIRONMENT=prod
+BASE_URL=https://app.jetimob.com
+```
 
-✔ Acesso inicial sem filtros
-✔ Persistência em navegação interna
-✔ Persistência após F5
-✔ Persistência ao sair e retornar ao módulo
-
-### 🔹 **Usuário com filtro favoritado**
-
-✔ Favorito carregado automaticamente
-✔ Persistência na navegação interna
-✔ Persistência após F5
-✔ Manutenção de filtros temporários adicionados ao favorito
-✔ Persistência ao sair e retornar ao módulo
+> Essas variáveis permitem rodar testes sem expor credenciais no código.
 
 ---
 
-# 🔑 **Credenciais de Teste**
+## 🚀 Como Executar
 
-> Apenas para fins do desafio técnico:
-
-```
-Usuário:  usuario-teste-qa2@gmail.com
-Senha:    desafiotecnico
-```
-
----
-
-# 🛠️ **Como Executar o Ambiente**
-
-### 1️⃣ Instalar dependências
+### Instalar dependências
 
 ```bash
 npm install
-```
-
-### 2️⃣ Instalar navegadores
-
-```bash
 npx playwright install
 ```
 
-### 3️⃣ Rodar todos os testes
+### Rodar testes
+
+* Todos os testes:
 
 ```bash
 npm test
 ```
 
-### 4️⃣ Rodar em modo UI (recomendado)
+* Modo UI:
 
 ```bash
-npx playwright test --ui
+npm run test:ui
+```
+
+* Headless (CI/CD):
+
+```bash
+npm run test:headless
+```
+
+* Gerar relatório Allure:
+
+```bash
+npm run report
 ```
 
 ---
 
-# 📂 **Principais Arquivos**
+## 🧪 Cobertura de Testes
 
-### 🔸 **playwright.config.ts**
+### Usuário sem filtro favoritado
 
-* Configuração principal do Playwright
-* Define browser, baseURL, vídeos e screenshots
-* Timeout global e paralelismo
+* CT-001: Nenhum filtro aplicado ao entrar
+* CT-002: Persistência na navegação interna
+* CT-003: Persistência após F5
+* CT-004: Persistência ao sair e voltar ao módulo
 
-### 🔸 **login.helper.ts**
+### Usuário com filtro favoritado
 
-Função auxiliar que executa o login antes dos testes.
-
-### 🔸 **filtros-sem-favorito.spec.ts**
-
-Cobertura completa de um usuário sem filtro favoritado.
-
-### 🔸 **filtros-com-favorito.spec.ts**
-
-Validação do uso de filtro favoritado e seus estados derivados.
+* CT-005: Filtro favoritado aplicado automaticamente
+* CT-006: Persistência na navegação interna
+* CT-007: Persistência após F5
+* CT-008: Filtros temporários adicionados ao favorito persistem em todos os cenários
 
 ---
 
-# 🚦 **Padronização de Branches**
+## 🏗️ Arquitetura do Projeto
 
-Este projeto segue o padrão **Conventional Commits**.
+* **POM (Page Object Model)**: `pages/`
+* **Fixtures customizadas**: `helpers/test-fixtures.ts`
+* **Configuração multi-browser**: Chromium, Firefox e Webkit
+* **Relatórios**: Allure
+* **CI/CD**: GitHub Actions (`.github/workflows/playwright.yml`)
 
-Branch principal utilizada neste desafio:
+---
+
+## 🔄 Git Branching
+
+Branch principal do projeto:
 
 ```
 feat/automacao-playwright-imoveis
 ```
 
----
-
-# 🐞 **Erros Conhecidos / Observações**
-
-* Dependendo da instabilidade do sistema, alguns elementos podem carregar lentamente — por isso foram incluídos `waitForURL` e seletores robustos.
-* Caso o filtro favoritado não exista, o CT-005 poderá falhar. Ajuste conforme necessário.
+Seguindo **Conventional Commits**.
 
 ---
 
-# 📄 **Casos de Teste Manuais**
+## 📂 CI/CD – GitHub Actions
 
-Os casos manuais utilizados estão disponíveis na documentação enviada no desafio, incluindo:
-
-* CT-001 até CT-008
-* Fluxos com usuário com e sem filtros favoritados
-* Regras de persistência em diversos cenários
-
-Se desejar, posso gerar um **PDF profissional desses casos**.
+* Rodar testes headless em múltiplos navegadores
+* Carregar credenciais via secrets (`TEST_EMAIL` e `TEST_PASSWORD`)
+* Gerar relatórios Allure automaticamente
 
 ---
 
-# 🤝 **Autor**
+## 👤 Autor
 
-**Higor Jason**
-QA Engineer – Automação | Testes Funcionais
+**Higor Jason** – QA Engineer | Automação & Testes Funcionais
 
 ---
-
-Só pedir!

@@ -1,0 +1,99 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic:
+    - generic:
+      - generic [ref=e2]:
+        - generic [ref=e3]:
+          - generic [ref=e7]:
+            - generic [ref=e8]:
+              - heading "Olá!" [level=1] [ref=e9]
+              - heading "Estamos aqui para lhe oferecer a melhor experiência de software no mercado imobiliário." [level=3] [ref=e10]
+              - heading "Por favor, conte-nos um pouco sobre você para ativar o seu período de teste:" [level=3] [ref=e11]
+              - generic [ref=e12]:
+                - generic [ref=e14]:
+                  - paragraph [ref=e15]: Nome *
+                  - textbox "Ana Luiza" [ref=e16]
+                - generic [ref=e18]:
+                  - paragraph [ref=e19]: E-mail *
+                  - textbox "nome@email.com" [ref=e20]
+                - generic [ref=e22]:
+                  - paragraph [ref=e23]: Telefone *
+                  - generic [ref=e25]:
+                    - generic [ref=e27] [cursor=pointer]:
+                      - generic [ref=e29]: "+55"
+                      - generic [ref=e30]: ▼
+                    - textbox "(11) 96123-4567" [ref=e31]
+                - generic [ref=e32]:
+                  - paragraph [ref=e33]: O que você gostaria de conhecer da Jetimob? *
+                  - generic [ref=e34]:
+                    - generic [ref=e35] [cursor=pointer]:
+                      - checkbox "Gestão de imóveis, site e portais" [ref=e36]
+                      - text: Gestão de imóveis, site e portais
+                    - generic [ref=e37] [cursor=pointer]:
+                      - checkbox "Gestão de vendas e CRM" [ref=e38]
+                      - text: Gestão de vendas e CRM
+                    - generic [ref=e39] [cursor=pointer]:
+                      - checkbox "Gestão de aluguéis" [ref=e40]
+                      - text: Gestão de aluguéis
+            - generic [ref=e41]:
+              - link "Voltar" [ref=e42] [cursor=pointer]:
+                - /url: /
+              - generic [ref=e43] [cursor=pointer]: Iniciar teste
+          - generic [ref=e46]:
+            - text: 
+            - generic [ref=e47]:
+              - img "Logo Jetimob" [ref=e48]
+              - heading "É ótimo ter você de volta!" [level=3] [ref=e49]
+            - generic [ref=e50]:
+              - generic [ref=e51]:
+                - generic [ref=e52]: E-mail
+                - textbox "exemplo@email.com" [active] [ref=e54]
+              - generic [ref=e55]:
+                - generic [ref=e56]: Senha
+                - generic [ref=e57]:
+                  - textbox "Digite sua senha" [ref=e58]
+                  - generic [ref=e60]: 
+              - button "Entrar" [ref=e61] [cursor=pointer]:
+                - generic [ref=e62]: Entrar
+              - generic [ref=e63]:
+                - link "Esqueci minha senha" [ref=e64] [cursor=pointer]:
+                  - /url: /redefinir-senha
+                - generic [ref=e65] [cursor=pointer]:
+                  - paragraph [ref=e66]: Atendimento
+                  - generic [ref=e67]: 
+              - generic [ref=e68]:
+                - text: Ainda não é cliente?
+                - link "Teste grátis" [ref=e69] [cursor=pointer]:
+                  - /url: /trial
+                  - generic [ref=e70]: Teste grátis
+              - link "© 2025 Jetimob - Todos os direitos reservados." [ref=e73] [cursor=pointer]:
+                - /url: //www.jetimob.com
+        - generic [ref=e78]:
+          - text: 
+          - generic [ref=e80]:
+            - paragraph [ref=e81]: LIVE GRATUITA
+            - heading "Prepare sua imobiliária para a nova Reforma Tributária | 02 DEZ às 16:00" [level=1] [ref=e82]
+            - link " Quero Participar" [ref=e83] [cursor=pointer]:
+              - /url: https://lp.jetimob.com/live-reforma-tributaria-imobiliaria?utm_source=app&utm_medium=oganic&utm_campaign=live-reforma-tributaria-12-25&utm_content=login
+              - generic [ref=e84]: 
+              - generic [ref=e85]: Quero Participar
+      - iframe [ref=e91]:
+        - generic [ref=f1e2]:
+          - generic [ref=f1e5]:
+            - link "Privacy" [ref=f1e6] [cursor=pointer]:
+              - /url: https://www.google.com/intl/en/policies/privacy/
+            - text: "-"
+            - link "Terms" [ref=f1e7] [cursor=pointer]:
+              - /url: https://www.google.com/intl/en/policies/terms/
+          - generic [ref=f1e8]:
+            - generic [ref=f1e9]:
+              - text: protected by
+              - strong [ref=f1e10]: reCAPTCHA
+            - generic [ref=f1e12]:
+              - text: reCAPTCHA is changing its terms of service.
+              - link "Take action." [ref=f1e13] [cursor=pointer]:
+                - /url: https://google.com/recaptcha/admin/migrate
+            - generic [ref=f1e14]: "-"
+```

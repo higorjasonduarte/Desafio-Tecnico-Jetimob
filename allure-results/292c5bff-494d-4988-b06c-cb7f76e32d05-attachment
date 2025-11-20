@@ -1,0 +1,311 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "main navigation" [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - button "menu" [ref=e6] [cursor=pointer]
+          - generic [ref=e10]:
+            - link "Logo jetimob desktop" [ref=e11] [cursor=pointer]:
+              - /url: /dashboard
+              - generic:
+                - img "Logo jetimob desktop"
+            - generic [ref=e15] [cursor=pointer]: 
+        - generic [ref=e17]:
+          - link "Sistema Teste QA" [ref=e19] [cursor=pointer]:
+            - /url: https://sem-dominio
+          - generic [ref=e22] [cursor=pointer]: 
+          - generic [ref=e23] [cursor=pointer]:
+            - generic [ref=e25]: 
+            - generic:
+              - generic: Notificações
+              - generic: Não há novas notificações nesse momento.
+              - generic:
+                - link "Ver tudo":
+                  - /url: /notificacoes
+        - generic [ref=e26]:
+          - generic [ref=e27] [cursor=pointer]:
+            - paragraph [ref=e30]: Usuário Teste QA 2
+            - link "" [ref=e32]:
+              - /url: "javascript:"
+              - generic [ref=e33]: 
+          - generic:
+            - generic:
+              - link " Configurações da conta":
+                - /url: /configuracoes-da-conta
+                - generic:
+                  - generic:
+                    - generic: 
+                  - generic: Configurações da conta
+            - generic:
+              - link " Configurações de notificações":
+                - /url: /configuracoes-de-notificacoes
+                - generic:
+                  - generic:
+                    - generic: 
+                  - generic: Configurações de notificações
+            - generic:
+              - link " Meu plano":
+                - /url: /meu-plano
+                - generic:
+                  - generic:
+                    - generic: 
+                  - generic: Meu plano
+            - generic:
+              - link " Acesso remoto":
+                - /url: /acesso-remoto
+                - generic:
+                  - generic:
+                    - generic: 
+                  - generic: Acesso remoto
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: 
+                  - generic: Sair
+            - generic:
+              - generic:
+                - link "Politica de privacidade":
+                  - /url: https://www.jetimob.com/politica
+              - generic:
+                - link "Termos de uso":
+                  - /url: https://www.jetimob.com/termos
+    - generic [ref=e37]:
+      - generic:
+        - list
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e42]:
+            - generic [ref=e45]: 
+            - generic [ref=e47]:
+              - paragraph [ref=e48]:
+                - paragraph [ref=e49]:
+                  - text: Hoje,
+                  - strong [ref=e50]: (20/11)
+                  - text: não teremos atendimento em razão do
+                  - strong [ref=e51]: feriado nacional do Dia da Consciência Negra
+                  - text: .
+                - paragraph [ref=e52]:
+                  - text: Retornamos normalmente no próximo dia útil. Caso precise de ajuda, nossa
+                  - link "Central de Materiais de Suporte" [ref=e53] [cursor=pointer]:
+                    - /url: https://ajuda.jetimob.com/
+                    - strong [ref=e54]: Central de Materiais de Suporte
+                  - text: estará disponível 💙
+              - generic "Fechar" [ref=e56] [cursor=pointer]: 
+          - generic [ref=e59]:
+            - generic [ref=e62]: 
+            - generic [ref=e64]:
+              - paragraph [ref=e65]:
+                - paragraph [ref=e66]:
+                  - text: No dia
+                  - strong [ref=e67]: "20"
+                  - strong [ref=e68]: /11
+                  - text: (quinta-feira) não teremos atendimento em razão do
+                  - strong [ref=e69]: feriado nacional do Dia da Consciência Negra
+                  - text: .
+                - paragraph [ref=e70]:
+                  - text: Retornamos normalmente no próximo dia útil. Caso precise de ajuda, nossa
+                  - link "Central de Materiais de Suporte" [ref=e71] [cursor=pointer]:
+                    - /url: https://ajuda.jetimob.com/
+                    - strong [ref=e72]: Central de Materiais de Suporte
+                  - text: estará disponível 💙
+              - generic "Fechar" [ref=e74] [cursor=pointer]: 
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - generic [ref=e77]:
+              - banner [ref=e79]:
+                - generic [ref=e80]:
+                  - generic [ref=e82]: 
+                  - text: Atividades
+              - generic [ref=e87]:
+                - img [ref=e88]
+                - paragraph [ref=e89]:
+                  - text: Nenhuma atividade atrasada ou
+                  - text: agendada para hoje!
+            - generic [ref=e90]:
+              - banner [ref=e92]:
+                - generic [ref=e93]:
+                  - generic [ref=e95]: 
+                  - text: Imóveis
+                  - generic [ref=e97]:
+                    - generic [ref=e98]:
+                      - text: Vendo todos
+                      - generic [ref=e99]: 
+                    - text: 
+              - generic [ref=e104]:
+                - generic [ref=e108]:
+                  - generic [ref=e109]: "1"
+                  - generic [ref=e110]: Imóveis
+                - list [ref=e112]:
+                  - listitem [ref=e113]:
+                    - link "0 Em aprovação" [ref=e114] [cursor=pointer]:
+                      - /url: /imoveis?disponibilidade=4&origem=-1
+                  - listitem [ref=e115]:
+                    - link "1 Atualizados" [ref=e116] [cursor=pointer]:
+                      - /url: /imoveis?atualizacao=Atualizados&disponibilidade=1&origem=-1
+                  - listitem [ref=e117]:
+                    - link "0 Expirando" [ref=e118] [cursor=pointer]:
+                      - /url: /imoveis?atualizacao=Expirando&disponibilidade=1&origem=-1
+                  - listitem [ref=e119]:
+                    - link "0 Desatualizados" [ref=e120] [cursor=pointer]:
+                      - /url: /imoveis?atualizacao=Desatualizados&disponibilidade=1&origem=-1
+            - generic [ref=e121]:
+              - banner [ref=e123]:
+                - generic [ref=e124]:
+                  - generic [ref=e126]: 
+                  - text: Exclusividades disponíveis
+                  - generic [ref=e128]:
+                    - generic [ref=e129]:
+                      - text: Vendo todas
+                      - generic [ref=e130]: 
+                    - text: 
+              - generic [ref=e135]:
+                - generic [ref=e136]:
+                  - generic [ref=e137]: 0 atualizadas
+                  - link "" [ref=e139] [cursor=pointer]:
+                    - /url: /imoveis?exclusividade=Atualizados&responsavel&disponibilidade=1
+                    - generic [ref=e140]: 
+                - generic [ref=e141]:
+                  - generic [ref=e142]: 0 vencendo
+                  - link "" [ref=e144] [cursor=pointer]:
+                    - /url: /imoveis?exclusividade=Vencendo&responsavel&disponibilidade=1
+                    - generic [ref=e145]: 
+                - generic [ref=e146]:
+                  - generic [ref=e147]: 0 vencidas
+                  - link "" [ref=e149] [cursor=pointer]:
+                    - /url: /imoveis?exclusividade=Desatualizados&responsavel&disponibilidade=1
+                    - generic [ref=e150]: 
+          - generic [ref=e151]:
+            - generic [ref=e152]:
+              - banner [ref=e154]:
+                - generic [ref=e155]:
+                  - generic [ref=e157]: 
+                  - text: Chaves
+                  - generic [ref=e159]:
+                    - generic [ref=e160]:
+                      - text: Vendo todas
+                      - generic [ref=e161]: 
+                    - text: 
+              - generic [ref=e166]:
+                - generic [ref=e167]:
+                  - generic [ref=e168]: 0 retiradas
+                  - link "" [ref=e170] [cursor=pointer]:
+                    - /url: /chaves?status=2
+                    - generic [ref=e171]: 
+                - generic [ref=e172]:
+                  - generic [ref=e173]: 0 atrasadas
+                  - link "" [ref=e175] [cursor=pointer]:
+                    - /url: /chaves?status=1
+                    - generic [ref=e176]: 
+            - generic [ref=e177]:
+              - banner [ref=e179]:
+                - generic [ref=e180]:
+                  - generic [ref=e182]: 
+                  - text: Aniversários
+              - paragraph [ref=e188]: Nenhum aniversário nos próximos dias
+          - generic [ref=e190]:
+            - banner [ref=e192]:
+              - generic [ref=e193]:
+                - generic [ref=e195]: 
+                - text: Propostas
+            - generic [ref=e200]:
+              - generic [ref=e201]:
+                - generic [ref=e202]: 0 ativas
+                - link "" [ref=e204] [cursor=pointer]:
+                  - /url: /propostas?status=1
+                  - generic [ref=e205]: 
+              - generic [ref=e206]:
+                - generic [ref=e207]: 0 vencem hoje
+                - link "" [ref=e209] [cursor=pointer]:
+                  - /url: /propostas?status=2
+                  - generic [ref=e210]: 
+    - complementary [ref=e211]:
+      - generic [ref=e212]:
+        - generic [ref=e215] [cursor=pointer]:
+          - generic [ref=e216]: 
+          - generic [ref=e217]: Início
+        - link " Imóveis" [ref=e220] [cursor=pointer]:
+          - /url: /imoveis
+          - generic [ref=e221]: 
+          - generic [ref=e222]: Imóveis
+        - link " Condomínios" [ref=e225] [cursor=pointer]:
+          - /url: /condominios
+          - generic [ref=e226]: 
+          - generic [ref=e227]: Condomínios
+        - link " Chaves" [ref=e230] [cursor=pointer]:
+          - /url: /chaves
+          - generic [ref=e231]: 
+          - generic [ref=e232]: Chaves
+        - link " Propostas" [ref=e235] [cursor=pointer]:
+          - /url: /propostas
+          - generic [ref=e236]: 
+          - generic [ref=e237]: Propostas
+        - link " Leads" [ref=e240] [cursor=pointer]:
+          - /url: /leads
+          - generic [ref=e241]: 
+          - generic [ref=e242]: Leads
+        - link " Roletas de leads !" [ref=e245] [cursor=pointer]:
+          - /url: /roletas-de-leads
+          - generic [ref=e246]: 
+          - generic [ref=e247]: Roletas de leads
+          - generic [ref=e248]: "!"
+        - link " Pessoas" [ref=e251] [cursor=pointer]:
+          - /url: /pessoas
+          - generic [ref=e252]: 
+          - generic [ref=e253]: Pessoas
+        - link " Oportunidades" [ref=e256] [cursor=pointer]:
+          - /url: /oportunidades
+          - generic [ref=e257]: 
+          - generic [ref=e258]: Oportunidades
+        - link " Atividades" [ref=e261] [cursor=pointer]:
+          - /url: /atividades
+          - generic [ref=e262]: 
+          - generic [ref=e263]: Atividades
+        - link " Portais" [ref=e266] [cursor=pointer]:
+          - /url: /portais
+          - generic [ref=e267]: 
+          - generic [ref=e268]: Portais
+        - link " Relatórios" [ref=e271] [cursor=pointer]:
+          - /url: /relatorios
+          - generic [ref=e272]: 
+          - generic [ref=e273]: Relatórios
+        - link " Integrações" [ref=e276] [cursor=pointer]:
+          - /url: /integracoes
+          - generic [ref=e277]: 
+          - generic [ref=e278]: Integrações
+        - generic [ref=e281] [cursor=pointer]:
+          - generic [ref=e282]: 
+          - generic [ref=e283]: Meu site
+          - generic [ref=e285]: 
+        - generic [ref=e288] [cursor=pointer]:
+          - generic [ref=e289]: 
+          - generic [ref=e290]: Sistema
+          - generic [ref=e292]: 
+      - generic [ref=e294] [cursor=pointer]:
+        - generic [ref=e295]: 
+        - generic [ref=e296]: Dicas e apoio
+    - generic:
+      - text: 
+      - generic [ref=e297]:
+        - generic "Usuário QA" [ref=e300]:
+          - generic [ref=e301] [cursor=pointer]:
+            - img "Usuário QA" [ref=e303]
+            - generic [ref=e304]: Usuário QA
+        - generic [ref=e305]:
+          - generic [ref=e307] [cursor=pointer]: 
+          - link "Ativar sons do chat." [ref=e309] [cursor=pointer]:
+            - /url: javascript:;
+          - generic "Expandir chat" [ref=e310] [cursor=pointer]:
+            - generic [ref=e311]: 
+    - generic:    
+  - dialog [ref=e316]:
+    - button "×" [ref=e317] [cursor=pointer]:
+      - generic [ref=e318]: ×
+    - generic [ref=e319]: 
+    - heading "Caso mude de ideia..." [level=2] [ref=e320]
+    - paragraph [ref=e322]: Saiba como reativar as notificações de seu navegador acessando o artigo disponibilizado pelo ajuda.jetimob.com
+    - generic [ref=e325] [cursor=pointer]: Acessar artigo
+```
